@@ -127,4 +127,4 @@ alias ocaml='ledit ocaml'
 alias gcc='gcc -Wall' 
 
 # Ocaml 4.00.1
-eval `opam config env`
+#eval `opam config env`
