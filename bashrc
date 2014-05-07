@@ -118,8 +118,11 @@ alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
 alias open='xdg-open'
 
 # Problème de menu sur Ubuntu 13.10
-alias eclipse='UBUNTU_MENUPROXY=0 eclipse'
-alias aptana='UBUNTU_MENUPROXY=0 aptana'
+if [[ "$HOSTNAME" == 'toshiro' ]] 
+then
+    alias eclipse='UBUNTU_MENUPROXY=0 eclipse'
+    alias aptana='UBUNTU_MENUPROXY=0 aptana'
+fi
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
