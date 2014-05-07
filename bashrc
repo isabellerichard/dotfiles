@@ -107,7 +107,7 @@ fi
 PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
 
 # Path
-PATH=$PATH:/home/isabelle/scripts
+PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
 
 # Utiles 
 alias rm='rm -i'
@@ -116,6 +116,10 @@ alias ll='ls -l'
 alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
 alias open='xdg-open'
+
+# Problème de menu sur Ubuntu 13.10
+alias eclipse='UBUNTU_MENUPROXY=0 eclipse'
+alias aptana='UBUNTU_MENUPROXY=0 aptana'
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
