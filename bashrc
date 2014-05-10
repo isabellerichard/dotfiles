@@ -103,8 +103,8 @@ fi
 # MA CONFIGURATION -
 # ------------------
 # Invite de commande
-#PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
-PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
+PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
+#PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
 
 # Path
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
@@ -116,13 +116,6 @@ alias ll='ls -l'
 alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
 alias open='xdg-open'
-
-# Problème de menu sur Ubuntu 13.10
-if [[ "$HOSTNAME" == 'toshiro' ]] 
-then
-    alias eclipse='UBUNTU_MENUPROXY=0 eclipse'
-    alias aptana='UBUNTU_MENUPROXY=0 aptana'
-fi
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
