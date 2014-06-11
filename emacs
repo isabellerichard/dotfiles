@@ -4,7 +4,7 @@
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; Chargement du thème
-(load-theme ' wheatgrass t)
+;; (load-theme ' wheatgrass t)
 
 ;; Arrière-plan
 ;; (set-background-color "black")
