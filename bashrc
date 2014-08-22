@@ -128,3 +128,6 @@ alias gcc='gcc -Wall'
 
 # Ocaml 4.00.1
 #eval `opam config env`
+
+# Python
+alias pep8='pep8 --max-line-length=140'
