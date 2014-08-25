@@ -110,6 +110,9 @@ PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
 
 # Utiles 
+function cs () {
+    cd "$@" && ls
+}
 alias rm='rm -i'
 alias ll='ls -l'
 #alias emacs='emacs -g -0+0' # emacs en haut à droite
