@@ -5,4 +5,8 @@ My configuration files for Linux
 
 ## load.sh
 
-This script is used to put all config files to their right location on Linux.
+This script replaces configuraton files by link to this repository's files.
+
+### TODO : 
+
+Find a way to automatically import texmaker configuration file.
