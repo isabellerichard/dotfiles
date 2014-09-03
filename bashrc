@@ -103,8 +103,9 @@ fi
 # MA CONFIGURATION -
 # ------------------
 # Invite de commande
-PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
+#PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
 #PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
+PS1='\[\e[32m\][\t] \[\e[34m\]\W\[\e[m\]$(__git_ps1) \[\e[34m\]$ \[\e[m\]'
 
 # Path
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
