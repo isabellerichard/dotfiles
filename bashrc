@@ -105,12 +105,13 @@ fi
 # Invite de commande
 #PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
 #PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
-if [ $(id -u) -eq 0 ]
-then
-    PS1='\[\e[1;31m\]\u: \w # \[\e[m\]'
-else
-    PS1='\[\e[32m\][\t] \[\e[34m\]\W\[\e[m\]$(__git_ps1) \[\e[34m\]$ \[\e[m\]'
-fi
+#if [ $(id -u) -eq 0 ]
+#then
+#    PS1='\[\e[1;31m\]\u: \w # \[\e[m\]'
+#else
+#    PS1='\[\e[32m\][\t] \[\e[34m\]\W\[\e[m\]$(__git_ps1) \[\e[34m\]$ \[\e[m\]'
+#fi
+PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
 
 # Path
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
@@ -138,3 +139,4 @@ alias gcc='gcc -Wall'
 
 # Python
 alias pep8='pep8 --max-line-length=140'
+
