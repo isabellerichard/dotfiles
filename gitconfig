@@ -15,3 +15,7 @@
 [alias]
     logtree = log --graph --oneline --decorate --all
     ls = log --pretty=format:"%C(green)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative --name-status
+    st = status
+
+[credential]
+	helper = store
