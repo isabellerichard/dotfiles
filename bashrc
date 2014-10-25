@@ -103,15 +103,17 @@ fi
 # MA CONFIGURATION -
 # ------------------
 # Invite de commande
-#PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
+# Colors:
+# 30 : black
+# 31 : red 
+# 32 : green
+# 33 : yellow
+# 34 : blue
+# 35 : purple
+# 36 : cyan
+# 37 : white
 #PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
-#if [ $(id -u) -eq 0 ]
-#then
-#    PS1='\[\e[1;31m\]\u: \w # \[\e[m\]'
-#else
-#    PS1='\[\e[32m\][\t] \[\e[34m\]\W\[\e[m\]$(__git_ps1) \[\e[34m\]$ \[\e[m\]'
-#fi
-PS1='\[\e[32m\]\u@\h \[\e[34m\]\W $ \[\e[m\]'
+PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\W\[\e[0;39m\]$(__git_ps1)\[\e[1;34m\] $ \[\e[m\]'
 
 # Path
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
@@ -124,6 +126,12 @@ alias ll='ls -l'
 alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
 alias open='xdg-open'
+
+# Google Drive
+# Requirements
+# sudo add-apt-repository ppa:alessandro-strada/ppa && sudo apt-get update && sudo apt-get install google-drive-ocamlfuse
+alias drive_mount='mkdir -p ~/Google\ Drive && google-drive-ocamlfuse -m ~/Google\ Drive'
+alias drive_unmount='fusermount -u Google\ Drive && rmdir ~/Google\ Drive'
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
@@ -138,5 +146,5 @@ alias gcc='gcc -Wall'
 #eval `opam config env`
 
 # Python
-alias pep8='pep8 --max-line-length=140'
+alias flake8='flake8 --max-line-length=150 --filename=*.py --exclude=__init__.py,*.md'
 
