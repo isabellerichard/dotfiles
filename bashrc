@@ -148,3 +148,14 @@ alias gcc='gcc -Wall'
 # Python
 alias flake8='flake8 --max-line-length=150 --filename=*.py --exclude=__init__.py,*.md'
 
+# Svn
+svndiff() {
+    svn diff "${@}" | view -
+}
+
+# Work
+PROJECT='/home/isabelle/Workspace/toyota'
+work() {
+    guake -r "odoo server" --execute-command='cd $PROJECT && clear'
+    guake -n k -r "source code" --execute-command='cd $PROJECT && clear'
+}
