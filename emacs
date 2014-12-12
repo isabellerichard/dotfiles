@@ -3,8 +3,11 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+;; XML indentation
+(setq sgml-basic-offset 2)
+
 ;; Chargement du thème
-;; (load-theme ' wheatgrass t)
+;; (load-theme ' manoj-dark t)
 
 ;; Arrière-plan
 ;; (set-background-color "black")
@@ -92,8 +95,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
  '(column-number-mode t)
  '(current-language-environment "UTF-8")
+ '(custom-enabled-themes (quote (manoj-dark)))
  '(custom-safe-themes (quote ("6e92ca53a22d9b0577ad0b16e07e2e020c8b621197e39fec454048e51b7954cb" default)))
  '(inhibit-startup-screen t)
  '(scroll-bar-mode (quote right))

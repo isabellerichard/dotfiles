@@ -7,6 +7,7 @@ mkdir -p ~/.ssh ~/.config/terminator
 ln -sf $PWD/bash_profile $HOME/.bash_profile
 ln -sf $PWD/bashrc $HOME/.bashrc
 ln -sf $PWD/emacs $HOME/.emacs
+ln -sf $PWD/flake8 $HOME/.config/flake8
 ln -sf $PWD/gitconfig $HOME/.gitconfig
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
 ln -sf $PWD/guake $HOME/.gconf/apps/guake
