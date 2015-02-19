@@ -11,6 +11,7 @@ ln -sf $PWD/flake8 $HOME/.config/flake8
 ln -sf $PWD/gitconfig $HOME/.gitconfig
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
 ln -sf $PWD/guake $HOME/.gconf/apps/guake
+ln -sf $PWD/pdbrc $HOME/.pdbrc
 ln -sf $PWD/psqlrc $HOME/.psqlrc
 ln -sf $PWD/rsync $HOME/.rsync
 ln -sf $PWD/vimrc $HOME/.vimrc

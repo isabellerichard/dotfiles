@@ -151,6 +151,9 @@ alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
 # Git
 export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
 
+# Psql
+export PGDATABASE='toyota'
+
 # Svn
 svn () {
 
