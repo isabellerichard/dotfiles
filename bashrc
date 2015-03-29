@@ -127,32 +127,21 @@ alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
 alias open='xdg-open'
 
-# Google Drive
-# Requirements
-# sudo add-apt-repository ppa:alessandro-strada/ppa && sudo apt-get update && sudo apt-get install google-drive-ocamlfuse
-alias drive_mount='mkdir -p ~/Google\ Drive && google-drive-ocamlfuse -m ~/Google\ Drive'
-alias drive_unmount='fusermount -u Google\ Drive && rmdir ~/Google\ Drive'
-
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
 export JBOSS_HOME=/home/isabelle/jboss-6.1.0.Final
 
 # Programmation 
 alias ocaml='ledit ocaml' 
-#alias python='python3' 
 alias gcc='gcc -Wall' 
-
-# Ocaml 4.00.1
-#eval `opam config env`
+alias pygrep='grep -HRn --include="*.py"'
+alias xgrep='grep -HRn --include="*.xml"'
 
 # Python
 alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
 
 # Git
 export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
-
-# Psql
-export PGDATABASE='toyota'
 
 # Svn
 svn () {

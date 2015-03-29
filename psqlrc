@@ -4,3 +4,4 @@
 \pset pager on
 \timing off
 \pset format wrapped
+\c odoo-ci
