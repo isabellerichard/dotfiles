@@ -15,5 +15,5 @@ ln -sf $PWD/pdbrc $HOME/.pdbrc
 ln -sf $PWD/psqlrc $HOME/.psqlrc
 ln -sf $PWD/rsync $HOME/.rsync
 ln -sf $PWD/vimrc $HOME/.vimrc
-ln -sf $PWD/ssh.config $HOME/.ssh/config
+ln -sf $PWD/ssh.config.tmpl $HOME/.ssh/config.tmpl
 ln -sf $PWD/terminator.config $HOME/.config/terminator/config
