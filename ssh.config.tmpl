@@ -1,0 +1,18 @@
+# SSH configuration template
+
+Host some_proxy
+Hostname ssh.some_proxy.fr
+Port 443
+User my_login
+
+Host some_host
+Hostname ssh.some_host.fr
+User root
+IdentityFile ~/.ssh/id_dsa
+
+Host some_host_needing_proxy
+Hostname ssh.some_host_needing_proxy.fr
+User root
+IdentityFile ~/.ssh/id_rsa
+ProxyCommand ssh some_proxy nc %h %p
+

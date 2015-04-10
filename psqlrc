@@ -3,5 +3,8 @@
 \set PROMPT1 '%[%033[1;33;40m%]%/%R#%[%033[0m%]% '
 \pset pager on
 \timing off
-\pset format wrapped
-\c odoo-ci
+-- \pset format wrapped
+\x auto
+
+-- switch to database
+\c isabelle

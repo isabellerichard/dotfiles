@@ -136,6 +136,7 @@ alias ocaml='ledit ocaml'
 alias gcc='gcc -Wall' 
 alias pygrep='grep -HRn --include="*.py"'
 alias xgrep='grep -HRn --include="*.xml"'
+alias ygrep='grep -HRn --include="*.yml"'
 
 # Python
 alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
