@@ -5,6 +5,3 @@
 \timing off
 -- \pset format wrapped
 \x auto
-
--- switch to database
-\c isabelle
