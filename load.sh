@@ -11,6 +11,7 @@ ln -sf $PWD/flake8 $HOME/.config/flake8
 ln -sf $PWD/gitconfig $HOME/.gitconfig
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
 ln -sf $PWD/pdbrc $HOME/.pdbrc
+ln -sf $PWD/pep8 $HOME/.config/pep8
 ln -sf $PWD/psqlrc $HOME/.psqlrc
 ln -sf $PWD/rsync $HOME/.rsync
 ln -sf $PWD/subversion.config $HOME/.subversion/config
