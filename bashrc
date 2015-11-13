@@ -195,3 +195,7 @@ svn () {
     fi
 }
 
+# Google Drive
+DRIVE_DIR="$HOME/GoogleDrive/Smile/Projets/Trois\ S"
+alias dpull="cd $DRIVE_DIR ; drive pull --ignore-name-clashes --ignore-conflict ; cd -"
+
