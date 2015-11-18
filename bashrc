@@ -122,6 +122,7 @@ PATH=$PATH:$HOME/Dropbox/smile/scripts
 # Utiles 
 alias rm='rm -i'
 alias ll='ls -l'
+alias dropdb='dropdb -i'
 #alias emacs='emacs -g -0+0' # emacs en haut à droite
 alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
