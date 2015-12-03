@@ -1,5 +1,6 @@
 colorscheme:odoo_log
 cs_re:green:INFO
 cs_re:yellow:WARN
+cs_re:yellow:WARNING
 cs_re:red:ERROR
 
