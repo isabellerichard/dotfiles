@@ -10,6 +10,7 @@ ln -sf $PWD/emacs $HOME/.emacs
 ln -sf $PWD/flake8 $HOME/.config/flake8
 ln -sf $PWD/gitconfig $HOME/.gitconfig
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
+ln -sf $PWD/multitailrc $HOME/.multitailrc
 ln -sf $PWD/pdbrc $HOME/.pdbrc
 ln -sf $PWD/pep8 $HOME/.config/pep8
 ln -sf $PWD/profile $HOME/.profile
