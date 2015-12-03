@@ -139,6 +139,15 @@ alias pygrep='grep -HRn --include="*.py"'
 alias xgrep='grep -HRn --include="*.xml"'
 alias ygrep='grep -HRn --include="*.yml"'
 
+colortail() {
+    tail -f -n 200 /var/log/odoo/server.log  | awk '
+    /WARNING/ {print "\033[33m" $0 "\033[39m"} 
+    /ERROR/ {print "\033[31m" $0 "\033[39m"} 
+    // {print $0}
+    '
+}
+
+
 # Python
 alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
 
