@@ -125,7 +125,7 @@ alias ll='ls -l'
 alias dropdb='dropdb -i'
 #alias emacs='emacs -g -0+0' # emacs en haut à droite
 alias emacs='emacs -mm' # emacs maximisé
-alias rsync='rsync --exclude-from=/home/isabelle/.rsync'
+alias rsync='rsync --exclude-from=$HOME/.rsync'
 alias open='xdg-open'
 
 # Editeur par défaut
@@ -196,7 +196,8 @@ svn () {
     fi
 }
 
-# Google Drive
-DRIVE_DIR="$HOME/GoogleDrive/Smile/Projets/Trois\ S"
-alias dpull="cd $DRIVE_DIR ; drive pull --ignore-name-clashes --ignore-conflict ; cd -"
+# Odoo projects
+if [ -f $HOME/.odoo/.odoorc ]; then
+    source $HOME/.odoo/.odoorc
+fi
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prepare the directories
-mkdir -p ~/.ssh ~/.config/terminator ~/.subversion
+mkdir -p $HOME/.ssh $HOME/.config/terminator $HOME/.odoo $HOME/.subversion
 
 # Replace config files by link to this repo
 ln -sf $PWD/bash_profile $HOME/.bash_profile
@@ -11,6 +11,7 @@ ln -sf $PWD/flake8 $HOME/.config/flake8
 ln -sf $PWD/gitconfig $HOME/.gitconfig
 ln -sf $PWD/gitignore_global $HOME/.gitignore_global
 ln -sf $PWD/multitailrc $HOME/.multitailrc
+ln -sf $PWD/odoorc $HOME/.odoo/.odoorc
 ln -sf $PWD/pdbrc $HOME/.pdbrc
 ln -sf $PWD/pep8 $HOME/.config/pep8
 ln -sf $PWD/profile $HOME/.profile
