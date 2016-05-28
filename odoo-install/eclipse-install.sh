@@ -9,7 +9,7 @@ VERSION=4.5
 # Install requirements
 echo "Install Java..."
 sudo apt-get install aptitude
-sudo aptitude -y install openjdk-7-jre openjdk-8-jdk
+sudo aptitude -y install openjdk-7-jre openjdk-7-jdk
 
 # Get Eclipse 
 echo "Installing Eclipse..."
