@@ -1,25 +1,83 @@
+;; path where settings files are kept
+(add-to-list 'load-path "~/.emacs.d/settings")
+;; path to where plugins are kept
+(setq plugin-path "~/.emacs.d/el-get/")
+
+;; define various custom functions
+(require 'custom-functions)
+
+;; configure general settings
+(require 'general-settings)
+
+;; install dependencies with el-get
+(require 'el-get-settings)
+
+;---------------;
+;;; Utilities ;;;
+;---------------;
+
+;; Popup
+(include-elget-plugin "popup")
+(require 'popup)
+
+;; Websocket
+(include-plugin "websocket")
+(require 'websocket)
+
+;; Request
+(include-plugin "request")
+(require 'request)
+
+;; yasnippet
+(require 'yasnippet-settings)
+
+;; Auto complete
+(require 'auto-complete-settings)
+
+;; Helm
+(require 'helm-settings)
+
+;-----------;
+;;; Modes ;;;
+;-----------;
+
+;; Ido mode
+(require 'ido)
+(ido-mode 1)
+
+;; Markdown mode
+(require 'markdown-settings)
+
+;; Python mode 
+(require 'python-settings)
+
+;; SCSS Mode
+(require 'scss-settings)
+
+;; Javascript
+(require 'js-settings)
+
+;; YAML mode
+(require 'yaml-settings)
+
+;------------------;
+;;; Old settings ;;;
+;------------------,
+
 ;; Ajout du repository de MELPA
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-;; XML indentation
+;; Indentation
+(setq c-basic-offset 4)
 (setq sgml-basic-offset 2)
 
 ;; Chargement du thème
-;; (load-theme ' manoj-dark t)
-
-;; Arrière-plan
-;; (set-background-color "black")
-
-;; Police
-;; (set-default-font "Bitstream Vera Sans Mono-10")
+(load-theme ' deeper-blue t)
 
 ;; Lors des compilations, place le curseur a la fin
 (setq compilation-scroll-output t)
-
-;; Indentation
-(setq c-basic-offset 4)
 
 ;; For xterm
 (xterm-mouse-mode 1)
@@ -86,27 +144,10 @@
 				("\\.m$" . mercury-mode))
 			      auto-mode-alist))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Paramètres ajoutés automatiquement ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;---------------------------------------------------------------------
+;;; Put auto 'custom' changes in a separate file (this is stuff like
+;;; ;; custom-set-faces and custom-set-variables) 
+(load 
+ (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
+ 'noerror)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
- '(column-number-mode t)
- '(current-language-environment "UTF-8")
- '(custom-enabled-themes (quote (manoj-dark)))
- '(custom-safe-themes (quote ("6e92ca53a22d9b0577ad0b16e07e2e020c8b621197e39fec454048e51b7954cb" default)))
- '(inhibit-startup-screen t)
- '(scroll-bar-mode (quote right))
- '(show-paren-mode t)
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

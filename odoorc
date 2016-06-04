@@ -2,9 +2,20 @@ export WORKSPACE=$HOME/workspace
 
 # UGC
 
-demo_server () {
-    cd $WORKSPACE/odoo
-    command /usr/bin/python2.7 openerp-server "$@"
+ugc_server () {
+    cd $WORKSPACE/ugc/ugc-pro
+    command /usr/bin/python2.7 server/openerp-server -c $HOME/.odoo/ugc.conf --load=web,smile_test "$@"
     cd -
 }
 
+adc_server () {
+    cd $WORKSPACE/groupe-adc
+    command /usr/bin/python2.7 sources/odoo/odoo-8.0_20160509/openerp-server -c $HOME/.odoo/adc.conf --load=web,smile_test "$@"
+    cd -
+}
+
+demo_server () {
+    cd $WORKSPACE/odoo
+    command /usr/bin/python2.7 openerp-server -c $HOME/.odoo/demo.conf "$@"
+    cd -
+}
