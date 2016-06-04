@@ -18,3 +18,8 @@ sudo pip install -r requirements.txt
 echo "Creating Odoo user..."
 sudo su postgres -c "createuser --createdb --no-createrole --pwprompt odoo"
 
+# Easy server launcher
+echo "Adding easy launcher for Odoo..."
+mkdir -p $HOME/.odoo
+cp .odoorc demo.conf $HOME/.odoo
+
