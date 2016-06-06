@@ -4,9 +4,9 @@
 # It should download and configure Eclipse to be used on Ubuntu 14.04
 # to develop in Python with Subversion.
 
-URL=http://ftp.halifax.rwth-aachen.de/eclipse//technology/epp/downloads/release/mars/R/eclipse-java-mars-R-linux-gtk-x86_64.tar.gz
+URL=http://mirror.dkm.cz/eclipse/technology/epp/downloads/release/mars/2/eclipse-java-mars-2-linux-gtk-x86_64.tar.gz
 TARGZ=eclipse.tar.gz
-VERSION=4.5
+VERSION=4.5.2
 WORKSPACE=$HOME/workspace
 
 function usage {
@@ -36,8 +36,12 @@ then
 
     # Install requirements
     echo "Installing Java..."
-    sudo apt-get install aptitude
-    sudo aptitude -y install openjdk-7-jre openjdk-7-jdk
+    sudo add-apt-repository ppa:openjdk-r/ppa
+    sudo apt-get update
+    sudo apt-get -y install openjdk-8-jre openjdk-8-jdk
+    echo "Select java-8"
+    sudo update-alternatives --config java
+    sudo update-alternatives --config javac
 
     # Get Eclipse 
     echo "Installing Eclipse..."
