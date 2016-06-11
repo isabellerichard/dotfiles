@@ -370,5 +370,10 @@ compinit
 precmd () {}
 autoload -U promptinit
 promptinit
-prompt adam1
+prompt adam2
+
+# Odoo projects
+if [ -f $HOME/.odoo/.odoorc ]; then
+    source $HOME/.odoo/.odoorc
+fi
 
