@@ -1,7 +1,8 @@
 \pset linestyle unicode
 \pset border 2
-\set PROMPT1 '%[%033[1;33;40m%]%/%R#%[%033[0m%]% '
+\set PROMPT1 '%[%033[1;35;40m%]%/%R#%[%033[0m%]% '
 \pset pager on
 \timing off
 -- \pset format wrapped
 \x auto
+
