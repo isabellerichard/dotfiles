@@ -1,5 +1,5 @@
 \pset linestyle unicode
-\pset border 0
+\pset border 1
 \set PROMPT1 '%[%033[1;35;40m%]%/%R#%[%033[0m%]% '
 \pset pager on
 \timing off
