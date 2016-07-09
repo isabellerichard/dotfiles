@@ -64,3 +64,4 @@ set autoindent
 
 " Switch to dark or light background
 map <F12> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+:nmap <F10> :set invnumber<CR>
