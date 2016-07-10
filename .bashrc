@@ -142,8 +142,15 @@ if [ -f $HOME/.svnrc ] ; then
     source $HOME/.svnrc
 fi
 
-# Connect to thunderbird from ADC local
-alias "adcthunderbird=ssh -D 8100 isric@ssh.idf.smile.fr -p 443"
+# Hello from K9 !
+echo """
+ \      oo
+  \____|\mm
+  //_//\ \_\\
+ /K-9/  \/_/
+/___/_____\\
+-----------
+"""
 
 # Prompt
 # Colors:
@@ -158,6 +165,5 @@ alias "adcthunderbird=ssh -D 8100 isric@ssh.idf.smile.fr -p 443"
 #PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
 #PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\W\[\e[0;39m\]$(__git_ps1)\[\e[1;34m\] $ \[\e[m\]'
 PS1='\[\e[1;31m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
-PS1='\[\e[1;44;37m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
-
+PS1='\[\e[1;43;37m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
 
