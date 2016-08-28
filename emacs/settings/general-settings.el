@@ -66,6 +66,7 @@
     (java-mode . "java") 
     (awk-mode . "awk") 
     (other . "gnu"))))
+(setq nxml-child-indent 4 nxml-attribute-indent 4)
 
 ; ignore case when searching
 (setq-default case-fold-search 1)
