@@ -114,6 +114,7 @@ alias dropdb='dropdb -i'
 alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=$HOME/.rsync'
 alias open='xdg-open'
+alias stellarhelp='echo "postgresql+psycopg2://odoo:odoo@localhost:5432/3S"'
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
