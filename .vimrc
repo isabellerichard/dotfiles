@@ -33,9 +33,9 @@ endif
 
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
-if has("autocmd")
-  filetype plugin indent on
-endif
+" if has("autocmd")
+"   filetype plugin indent on
+" endif
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
@@ -57,7 +57,7 @@ set number		" Show numbers of lines
 set hls is		" Highlight and incremental search
 
 set cursorline
-hi CursorLine	cterm=BOLD	ctermfg=NONE ctermbg=NONE
+hi CursorLine	cterm=BOLD	ctermfg=black ctermbg=yellow
 set shiftwidth=4
 set autoindent
 "set colorcolumn=80
