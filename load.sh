@@ -9,5 +9,5 @@ cp .bash_profile .bashrc .gitconfig .gitignore_global .multitailrc .pdbrc \
 cp flake8 pep8 $HOME/.config
 cp subversion.config $HOME/.subversion/config
 cp ssh.config.tmpl $HOME/.ssh/config.tmpl
-cp Anaconda/Anaconda.sublime-settings $HOME/.config/sublime-text-3/Packages/User
+cp Anaconda/*.sublime-settings Anaconda/*.sublime-snippet $HOME/.config/sublime-text-3/Packages/User
 cp terminator.config $HOME/.config/terminator/config
