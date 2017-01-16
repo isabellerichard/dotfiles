@@ -1,5 +1,6 @@
 {
-	"jotter_color_scheme": "Packages/PlainNotes/Color Schemes/Sticky-Yellow.tmTheme" ,
+	"note_color_scheme": "Packages/PlainNotes/Color Schemes/Sticky-Gray.tmTheme" ,
+	"jotter_color_scheme": "Packages/PlainNotes/Color Schemes/Sticky-Gray.tmTheme" ,
     "jotter_date_format": "%d %b %Y",
-    "jotter_time_format": "%H:%M"
+    "jotter_time_format": "%H:%M",
 }
