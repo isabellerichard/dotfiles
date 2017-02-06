@@ -118,7 +118,6 @@ alias stellarhelp='echo "postgresql+psycopg2://odoo:odoo@localhost:5432/3S"'
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
-export JBOSS_HOME=/home/isabelle/jboss-6.1.0.Final
 
 # Programmation 
 alias ocaml='ledit ocaml' 
