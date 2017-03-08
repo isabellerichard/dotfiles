@@ -11,3 +11,7 @@ cp subversion.config $HOME/.subversion/config
 cp ssh.config.tmpl $HOME/.ssh/config.tmpl
 cp Anaconda/*.sublime-keymap Anaconda/*.sublime-settings Anaconda/*.sublime-snippet $HOME/.config/sublime-text-3/Packages/User
 cp terminator.config $HOME/.config/terminator/config
+
+# Install bash-it
+. bash-it/install.sh
+
