@@ -163,7 +163,7 @@ PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;34m\] $ \[\e
 # PS1="\\033[1;95;38;5;160m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m "
 
 # Path to the bash it configuration
-export BASH_IT="/home/isabelle/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
