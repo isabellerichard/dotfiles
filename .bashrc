@@ -104,7 +104,7 @@ fi
 # ------------------
 # Path
 PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
-PATH=$PATH:$HOME/Dropbox/smile/scripts
+PATH=$PATH:$HOME/workspace/dev-tools
 
 # Utiles 
 alias rm='rm -i'
@@ -129,6 +129,10 @@ alias ygrep='grep -HRn --include="*.yml"'
 # Python
 alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
 
+# SSH
+alias enable_ssh_home='sed -i '/^#ProxyCommand/s/^#//g' ~/.ssh/config'
+alias disable_ssh_proxy='sed -i '/^ProxyCommand/s/^/#/g' ~/.ssh/config'
+
 # Git
 export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
 
@@ -141,6 +145,9 @@ fi
 if [ -f $HOME/.svnrc ] ; then
     source $HOME/.svnrc
 fi
+
+# Enable auto completion for cd only on directories
+complete -d cd
 
 # Prompt
 # Colors:
@@ -157,13 +164,10 @@ PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;34m\] $ \[\e
 #PS1='\[\e[1;31m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
 #PS1='\[\e[1;46;37m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
 
-# Colored prompts to differenciate environments
-# green bold
-# PS1="\\033[1;95;38;5;047m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m\[\e[m\] "
 # orange bold
-# PS1="\\033[1;95;38;5;214m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m\[\e[m\] "
+#PS1="\\033[1;95;38;5;214m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m "
 # red bold
-# PS1="\\033[1;95;38;5;160m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m\[\e[m\] "
+# PS1="\\033[1;95;38;5;160m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m "
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
