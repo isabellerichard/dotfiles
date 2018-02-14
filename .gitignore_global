@@ -3,3 +3,5 @@
 ~*
 .*.swp
 docker-compose.yml
+server.conf
+
