@@ -108,7 +108,7 @@ PATH=$PATH:$HOME/workspace/dev-tools
 
 # Utiles 
 alias rm='rm -i'
-alias ll='ls -l'
+alias ll='ls -lh'
 alias dropdb='dropdb -i'
 #alias emacs='emacs -g -0+0' # emacs en haut à droite
 alias emacs='emacs -mm' # emacs maximisé
