@@ -1,7 +1,0 @@
-export WORKSPACE=$HOME/workspace
-
-demo_server () {
-    cd $WORKSPACE/odoo
-    command /usr/bin/python2.7 openerp-server "$@"
-    cd -
-}

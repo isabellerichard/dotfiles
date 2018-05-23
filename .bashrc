@@ -136,11 +136,6 @@ alias disable_ssh_proxy='sed -i '/^ProxyCommand/s/^/#/g' ~/.ssh/config'
 # Git
 export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
 
-# Odoo projects
-if [ -f $HOME/.odoo/.odoorc ]; then
-    source $HOME/.odoo/.odoorc
-fi
-
 # Svn
 if [ -f $HOME/.svnrc ] ; then
     source $HOME/.svnrc
