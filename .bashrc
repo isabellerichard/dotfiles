@@ -103,10 +103,9 @@ fi
 # MA CONFIGURATION -
 # ------------------
 # Path
-PATH=$PATH:$HOME/scripts:$HOME/Workspace/OpenERP7.0/server/history
 PATH=$PATH:$HOME/workspace/dev-tools
 
-# Utiles 
+# Utiles
 alias rm='rm -i'
 alias ll='ls -lh'
 alias dropdb='dropdb -i'
@@ -115,13 +114,14 @@ alias emacs='emacs -mm' # emacs maximisé
 alias rsync='rsync --exclude-from=$HOME/.rsync'
 alias open='xdg-open'
 alias stellarhelp='echo "postgresql+psycopg2://odoo:odoo@localhost:5432/3S"'
+alias dc='docker-compose'
 
 # Editeur par défaut
 export VISUAL=/usr/bin/vim
 
-# Programmation 
-alias ocaml='ledit ocaml' 
-alias gcc='gcc -Wall' 
+# Programmation
+alias ocaml='ledit ocaml'
+alias gcc='gcc -Wall'
 alias pygrep='grep -HRn --include="*.py"'
 alias xgrep='grep -HRn --include="*.xml"'
 alias ygrep='grep -HRn --include="*.yml"'
@@ -136,18 +136,13 @@ alias disable_ssh_proxy='sed -i '/^ProxyCommand/s/^/#/g' ~/.ssh/config'
 # Git
 export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
 
-# Svn
-if [ -f $HOME/.svnrc ] ; then
-    source $HOME/.svnrc
-fi
-
 # Enable auto completion for cd only on directories
 complete -d cd
 
 # Prompt
 # Colors:
 # 30 : black
-# 31 : red 
+# 31 : red
 # 32 : green
 # 33 : yellow
 # 34 : blue
@@ -169,7 +164,7 @@ export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='powerline-plain'
+export BASH_IT_THEME='purity'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
