@@ -97,67 +97,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-
-
 # ------------------
-# MA CONFIGURATION -
+# BASH_IT -
 # ------------------
-# Path
-PATH=$PATH:$HOME/workspace/dev-tools
-
-# Utiles
-alias rm='rm -i'
-alias ll='ls -lh'
-alias dropdb='dropdb -i'
-#alias emacs='emacs -g -0+0' # emacs en haut à droite
-alias emacs='emacs -mm' # emacs maximisé
-alias rsync='rsync --exclude-from=$HOME/.rsync'
-alias open='xdg-open'
-alias stellarhelp='echo "postgresql+psycopg2://odoo:odoo@localhost:5432/3S"'
-alias dc='docker-compose'
-
-# Editeur par défaut
-export VISUAL=/usr/bin/vim
-
-# Programmation
-alias ocaml='ledit ocaml'
-alias gcc='gcc -Wall'
-alias pygrep='grep -HRn --include="*.py"'
-alias xgrep='grep -HRn --include="*.xml"'
-alias ygrep='grep -HRn --include="*.yml"'
-
-# Python
-alias flake8='flake8 --filename=*.py --exclude=__init__.py,*.md'
-
-# SSH
-alias enable_ssh_home='sed -i '/^#ProxyCommand/s/^#//g' ~/.ssh/config'
-alias disable_ssh_proxy='sed -i '/^ProxyCommand/s/^/#/g' ~/.ssh/config'
-
-# Git
-export FLAKE8_STRICT=True  # forbids commit on Git projects if flake8 errors
-
-# Enable auto completion for cd only on directories
-complete -d cd
-
-# Prompt
-# Colors:
-# 30 : black
-# 31 : red
-# 32 : green
-# 33 : yellow
-# 34 : blue
-# 35 : purple
-# 36 : cyan
-# 37 : white
-#PS1='\[\e[32m\]\u \[\e[33m\]{\A} \[\e[35m\]\W $ \[\e[m\]'
-PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;34m\] $ \[\e[m\]'
-#PS1='\[\e[1;31m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
-#PS1='\[\e[1;46;37m\]\w\[\e[0;39m\]$(__git_ps1)\[\e[1;31m\] > \[\e[m\]'
-
-# orange bold
-#PS1="\\033[1;95;38;5;214m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m "
-# red bold
-# PS1="\\033[1;95;38;5;160m\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\\033[0m "
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
