@@ -1,8 +1,0 @@
-{ 
-	"auto_formatting": true,
-	"pep8_rcfile": "~/.config/pep8",
-	"autoformat_ignore": [
-		"E501",
-		"E702",
-	],
-}
