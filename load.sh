@@ -1,14 +1,13 @@
 #!/bin/bash
 
 # Prepare the directories
-mkdir -p $HOME/.ssh $HOME/.config/sublime-text-3/Packages/User $HOME/.config/terminator $HOME/.subversion
+mkdir -p $HOME/.ssh $HOME/.config/terminator
 
 # Replace config files by link to this repo
 cp .bash_profile .bashrc .gitconfig .gitignore_global .pdbrc \
     .profile .psqlrc .rsync .vimrc $HOME
 cp flake8 pep8 $HOME/.config
 cp ssh.config.tmpl $HOME/.ssh/config.tmpl
-cp Anaconda/*.sublime-keymap Anaconda/*.sublime-settings Anaconda/*.sublime-snippet $HOME/.config/sublime-text-3/Packages/User
 cp terminator.config $HOME/.config/terminator/config
 
 # Install bash-it
