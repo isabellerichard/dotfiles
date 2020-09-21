@@ -4,7 +4,7 @@
 mkdir -p $HOME/.ssh $HOME/.config/terminator
 
 # Replace config files by link to this repo
-cp .bash_profile .bashrc .gitconfig .gitignore_global .pdbrc \
+cp .bash_aliases .bash_profile .bashrc .gitconfig .gitignore_global .pdbrc \
     .profile .psqlrc .rsync .vimrc $HOME
 cp flake8 pep8 $HOME/.config
 cp ssh.config.tmpl $HOME/.ssh/config.tmpl
