@@ -19,6 +19,8 @@
     st = status
     ci = commit
     co = checkout
+    retrack = update-index --no-assume-unchanged
+    untrack = update-index --assume-unchanged
 
 [credential]
     helper = store
