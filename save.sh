@@ -6,3 +6,7 @@ cp $HOME/.bash_aliases $HOME/.bash_profile $HOME/.bashrc $HOME/.gitconfig $HOME/
 cp $HOME/.config/flake8 $HOME/.config/pep8 .
 cp $HOME/.ssh/config.tmpl ssh.config.tmpl
 cp $HOME/.config/terminator/config terminator.config
+
+# Save Oh My Zsh configuration
+cp $HOME/.zshrc ~/.p10k.zsh .
+
