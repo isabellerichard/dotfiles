@@ -82,6 +82,8 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   bgnotify
+  docker
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +113,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dc='docker-compose'
+alias ll='ls -l'
+alias open='xdg-open'
+alias rm='rm -i'
+PATH=$PATH:~/workspace/devops/dev-tools
+PLANNING_PATH='~/workspace/planning'
+alias planning='python3 '$PLANNING_PATH'/run.py'
+IMPUTATIONS_PATH='~/Documents'
+alias gescom='python3 '$IMPUTATIONS_PATH'/compute_hours.py'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
