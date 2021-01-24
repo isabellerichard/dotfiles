@@ -2,8 +2,4 @@
 *~
 ~*
 .*.swp
-docker-compose.yml
-server.conf
-datadir
-Dockerfile
 .vscode/*
