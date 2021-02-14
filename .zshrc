@@ -84,6 +84,9 @@ plugins=(
   bgnotify
   docker
   docker-compose
+  kubectl
+  minikube
+  systemd
 )
 
 source $ZSH/oh-my-zsh.sh
