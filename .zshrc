@@ -121,6 +121,7 @@ alias ll='ls -l'
 alias open='xdg-open'
 alias rm='rm -i'
 PATH=$PATH:~/workspace/devops/dev-tools
+PATH=$PATH:~/.local/bin
 PLANNING_PATH='~/workspace/planning'
 alias planning='python3 '$PLANNING_PATH'/run.py'
 IMPUTATIONS_PATH='~/Documents'
