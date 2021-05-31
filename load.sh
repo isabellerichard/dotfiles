@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install required packages
+sudo apt install curl
+
 # Prepare the directories
 mkdir -p $HOME/.ssh $HOME/.config/terminator
 
