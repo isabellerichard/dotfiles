@@ -27,3 +27,8 @@ echo "-----"
 echo "Do not forget to install these fonts: "
 echo "https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k"
 
+# Change theme
+mkdir -p ~/.themes
+git clone https://github.com/EliverLara/Nordic.git
+gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
+gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
