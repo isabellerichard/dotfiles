@@ -29,6 +29,8 @@ echo "https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-power
 
 # Change theme
 mkdir -p ~/.themes
+cd ~/.themes
 git clone https://github.com/EliverLara/Nordic.git
 gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
 gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
+
