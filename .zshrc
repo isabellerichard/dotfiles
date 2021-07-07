@@ -125,6 +125,7 @@ PLANNING_PATH='~/workspace/planning'
 alias planning='python3 '$PLANNING_PATH'/run.py'
 IMPUTATIONS_PATH='~/Documents'
 alias gescom='python3 '$IMPUTATIONS_PATH'/compute_hours.py'
+alias python=python3
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
